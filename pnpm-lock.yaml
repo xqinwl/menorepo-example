@@ -15,6 +15,7 @@ importers:
   apps/docs:
     specifiers:
       '@babel/core': ^7.0.0
+      '@qinwl/ui': workspace:*
       '@types/node': ^17.0.12
       '@types/react': 18.0.17
       eslint: 7.32.0
@@ -25,12 +26,11 @@ importers:
       react-dom: 18.2.0
       tsconfig: workspace:*
       typescript: ^4.5.3
-      ui: workspace:*
     dependencies:
+      '@qinwl/ui': link:../../packages/ui
       next: 12.3.0_ir3quccc6i62x6qn6jjhyjjiey
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.19.1
       '@types/node': 17.0.45
@@ -44,6 +44,7 @@ importers:
   apps/web:
     specifiers:
       '@babel/core': ^7.0.0
+      '@qinwl/ui': workspace:*
       '@types/node': ^17.0.12
       '@types/react': 18.0.17
       eslint: 7.32.0
@@ -54,12 +55,11 @@ importers:
       react-dom: 18.2.0
       tsconfig: workspace:*
       typescript: ^4.5.3
-      ui: workspace:*
     dependencies:
+      '@qinwl/ui': link:../../packages/ui
       next: 12.3.0_ir3quccc6i62x6qn6jjhyjjiey
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.19.1
       '@types/node': 17.0.45
