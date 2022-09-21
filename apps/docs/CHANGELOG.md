@@ -1,5 +1,13 @@
 # docs
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [4022ee7]
+  - @qinwl/base-utils@0.0.3
+  - @qinwl/ui@0.2.3
+
 ## 0.0.3
 
 ### Patch Changes
