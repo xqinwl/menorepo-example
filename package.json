@@ -12,7 +12,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    "version": "changeset version"
+    "bump": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.24.4",
