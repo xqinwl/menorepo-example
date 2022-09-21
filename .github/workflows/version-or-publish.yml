@@ -40,7 +40,7 @@ jobs:
           version: pnpm bump
           commit: "chore: update versions"
           title: "chore: update versions"
-          publish: ci:publish
+          publish: pnpm ci:publish
         env:
           GITHUB_TOKEN: ${{ secrets.WORK_FLOW_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
