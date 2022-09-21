@@ -1,5 +1,12 @@
 # @qinwl/ui
 
+## 0.2.2
+
+### Patch Changes
+
+- Updated dependencies [208caf5]
+  - @qinwl/base-utils@0.0.2
+
 ## 0.2.1
 
 ### Patch Changes

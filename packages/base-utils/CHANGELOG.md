@@ -1,5 +1,11 @@
 # @qinwl/base-utils
 
+## 0.0.2
+
+### Patch Changes
+
+- 208caf5: bump version
+
 ## 0.0.1
 
 ### Patch Changes
