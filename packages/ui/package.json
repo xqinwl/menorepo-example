@@ -1,6 +1,6 @@
 {
   "name": "@qinwl/ui",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "license": "MIT",
