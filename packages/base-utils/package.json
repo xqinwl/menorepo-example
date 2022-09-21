@@ -1,5 +1,5 @@
 {
-  "name": "@qinwl/ui",
+  "name": "@qinwl/base-utils",
   "version": "0.0.0",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
@@ -10,15 +10,9 @@
     "start": "tsc --watch"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "react": "^18.2.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2"
-  },
-  "dependencies": {
-    "@qinwl/base-utils": "workspace:^0.0.0"
   }
 }

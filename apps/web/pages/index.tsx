@@ -1,10 +1,9 @@
-import { Button } from "ui";
-
+import {ellipsis} from "@qinwl/base-utils";
 export default function Web() {
   return (
     <div>
       <h1>Web</h1>
-      <Button />
+      {ellipsis("11111")}
     </div>
   );
 }

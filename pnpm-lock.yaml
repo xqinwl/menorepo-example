@@ -15,6 +15,7 @@ importers:
   apps/docs:
     specifiers:
       '@babel/core': ^7.0.0
+      '@qinwl/base-utils': workspace:*
       '@qinwl/ui': workspace:*
       '@types/node': ^17.0.12
       '@types/react': 18.0.17
@@ -27,6 +28,7 @@ importers:
       tsconfig: workspace:*
       typescript: ^4.5.3
     dependencies:
+      '@qinwl/base-utils': link:../../packages/base-utils
       '@qinwl/ui': link:../../packages/ui
       next: 12.3.0_ir3quccc6i62x6qn6jjhyjjiey
       react: 18.2.0
@@ -44,7 +46,7 @@ importers:
   apps/web:
     specifiers:
       '@babel/core': ^7.0.0
-      '@qinwl/ui': workspace:*
+      '@qinwl/base-utils': workspace:*
       '@types/node': ^17.0.12
       '@types/react': 18.0.17
       eslint: 7.32.0
@@ -56,7 +58,7 @@ importers:
       tsconfig: workspace:*
       typescript: ^4.5.3
     dependencies:
-      '@qinwl/ui': link:../../packages/ui
+      '@qinwl/base-utils': link:../../packages/base-utils
       next: 12.3.0_ir3quccc6i62x6qn6jjhyjjiey
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -68,6 +70,18 @@ importers:
       eslint-config-custom: link:../../packages/eslint-config-custom
       next-transpile-modules: 9.0.0
       tsconfig: link:../../packages/tsconfig
+      typescript: 4.8.3
+
+  packages/base-utils:
+    specifiers:
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    devDependencies:
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      tsconfig: link:../tsconfig
       typescript: 4.8.3
 
   packages/eslint-config-custom:
@@ -92,6 +106,7 @@ importers:
 
   packages/ui:
     specifiers:
+      '@qinwl/base-utils': workspace:^0.0.0
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       eslint: ^7.32.0
@@ -99,6 +114,8 @@ importers:
       react: ^18.2.0
       tsconfig: workspace:*
       typescript: ^4.5.2
+    dependencies:
+      '@qinwl/base-utils': link:../base-utils
     devDependencies:
       '@types/react': 18.0.20
       '@types/react-dom': 18.0.6
