@@ -12,7 +12,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    "bump": "changeset version"
+    "bump": "changeset version",
+    "ci:publish": "pnpm -r publish --access public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.24.4",
