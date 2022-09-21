@@ -33,14 +33,15 @@ jobs:
             cache: "pnpm"
       - name: setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+      - name: who am i
+        env:
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm whoami
       - name: Install dependencies
         run: pnpm install
       - name: Build package
         run: pnpm build
-      - name: who am i
-        env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm whoami
       - name: create and publish versions
         uses: changesets/action@v1
         with:
