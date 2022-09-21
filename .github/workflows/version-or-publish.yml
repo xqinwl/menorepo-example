@@ -37,7 +37,8 @@ jobs:
         env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm whoami
+        run: |
+         pnpm whoami
       - name: Install dependencies
         run: pnpm install
       - name: Build package
