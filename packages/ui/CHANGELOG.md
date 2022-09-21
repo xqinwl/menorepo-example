@@ -1,5 +1,11 @@
 # @qinwl/ui
 
+## 0.2.1
+
+### Patch Changes
+
+- cd4b0e3: bump ui version to 0.2.1
+
 ## 0.0.1
 
 ### Patch Changes
